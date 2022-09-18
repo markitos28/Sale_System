@@ -1,0 +1,15 @@
+C:\Users\Marcos Sosa\source\repos\Sale_System\Domain\bin\Debug\net6.0\Domain.exe
+C:\Users\Marcos Sosa\source\repos\Sale_System\Domain\bin\Debug\net6.0\Domain.deps.json
+C:\Users\Marcos Sosa\source\repos\Sale_System\Domain\bin\Debug\net6.0\Domain.runtimeconfig.json
+C:\Users\Marcos Sosa\source\repos\Sale_System\Domain\bin\Debug\net6.0\Domain.dll
+C:\Users\Marcos Sosa\source\repos\Sale_System\Domain\bin\Debug\net6.0\Domain.pdb
+C:\Users\Marcos Sosa\source\repos\Sale_System\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+C:\Users\Marcos Sosa\source\repos\Sale_System\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marcos Sosa\source\repos\Sale_System\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Marcos Sosa\source\repos\Sale_System\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+C:\Users\Marcos Sosa\source\repos\Sale_System\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Marcos Sosa\source\repos\Sale_System\Domain\obj\Debug\net6.0\Domain.dll
+C:\Users\Marcos Sosa\source\repos\Sale_System\Domain\obj\Debug\net6.0\refint\Domain.dll
+C:\Users\Marcos Sosa\source\repos\Sale_System\Domain\obj\Debug\net6.0\Domain.pdb
+C:\Users\Marcos Sosa\source\repos\Sale_System\Domain\obj\Debug\net6.0\Domain.genruntimeconfig.cache
+C:\Users\Marcos Sosa\source\repos\Sale_System\Domain\obj\Debug\net6.0\ref\Domain.dll
