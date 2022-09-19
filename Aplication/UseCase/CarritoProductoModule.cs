@@ -33,7 +33,16 @@ namespace Aplication.UseCase
             }
             else
             {
-                
+                await _command.UpdateCarritoProducto(carritoId, productoId, cantidad);
+            }
+        }
+
+        public async Task QuitarProductoACarrito(Guid carritoId, int productoId, int cantidad)
+        {
+            var carritoProducto = _query.GetCarritoProducto(carritoId, productoId);
+            if (carritoProducto != null)
+            {
+                await _command.UpdateCarritoProducto(carritoId, productoId, cantidad);
             }
         }
     }

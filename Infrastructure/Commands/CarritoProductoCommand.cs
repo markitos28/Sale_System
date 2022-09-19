@@ -18,7 +18,7 @@ namespace Infrastructure.Commands
         {
             _context = context;
         }
-        public async Task DeleteCarritoProducto(int carritoId, int productoId)
+        public async Task DeleteCarritoProducto(Guid carritoId, int productoId)
         {
             var carritoProducto = _context.CarritoProducto.Find(carritoId,productoId);
             _context.CarritoProducto.Remove(carritoProducto);
@@ -31,10 +31,10 @@ namespace Infrastructure.Commands
             await _context.SaveChangesAsync();
         }
 
-        public async Task UpdateCarritoProducto(int carritoId, int productoId, int cantidad)
+        public async Task UpdateCarritoProducto(Guid carritoId, int productoId, int cantidad)
         {
             var updCarritoProducto = _context.CarritoProducto.Find(carritoId,productoId);
-            updCarritoProducto.Cantidad = cantidad;
+            updCarritoProducto.Cantidad += cantidad;
             await _context.SaveChangesAsync();
         }
     }
