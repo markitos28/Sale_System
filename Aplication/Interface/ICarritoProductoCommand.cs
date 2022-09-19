@@ -10,6 +10,7 @@ namespace Aplication.Interface
     public interface ICarritoProductoCommand
     {
         Task InsertCarritoProducto(CarritoProducto carritoProducto);
-        Task DeleteCarritoProducto(int carritoId, int productoId);
+        Task DeleteCarritoProducto(Guid carritoId, int productoId);
+        Task UpdateCarritoProducto(Guid carritoId, int productoId, int cantidad);
     }
 }

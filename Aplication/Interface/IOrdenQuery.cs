@@ -9,7 +9,8 @@ namespace Aplication.Interface
 {
     public interface IOrdenQuery
     {
-        Orden GetOrden(int ordenId);
+        Orden GetOrden(Guid ordeId);
+        Orden GetOrdenCarrito(Guid carritoId);
         IList<Orden> GetOrdenAll();
     }
 }

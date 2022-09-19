@@ -10,7 +10,7 @@ namespace Aplication.Interface
     public interface IOrdenCommand
     {
         Task InsertOrden(Orden orden);
-        Task DeleteOrden(int clienteId);
-        Task UpdateOrden(Orden orden);
+        Task DeleteOrden(int ordenId);
+        Task UpdateOrden(Guid ordenId, decimal total);
     }
 }
