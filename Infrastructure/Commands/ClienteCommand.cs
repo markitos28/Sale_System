@@ -28,7 +28,6 @@ namespace Infrastructure.Commands
         public async Task InsertCliente(Cliente cliente)
         {
             _context.Add(cliente);
-            _context.SaveChanges();
             await _context.SaveChangesAsync();
         }
 
@@ -37,19 +36,14 @@ namespace Infrastructure.Commands
         {
             /* Para actualizar un registro de cliente se pasa todo el objeto y solo actualiza lo que no venga nulo*/
             var updCliente = _context.Cliente.Find(cliente.ClienteId);
-            if (! cliente.DNI.Equals(null))
-                updCliente.DNI= cliente.DNI;
 
-            if (!cliente.Nombre.Equals(null))
-                updCliente.Nombre = cliente.Nombre;
-
-            if (!cliente.Apellido.Equals(null))
-                updCliente.Apellido = cliente.Apellido;
-
-
-
-            updCliente.Direccion = ?cliente.Direccion;
+            updCliente.DNI= cliente.DNI.Equals(null) ? updCliente.DNI : cliente.DNI;
+            updCliente.Nombre = cliente.Nombre.Equals(null) ? updCliente.Nombre : cliente.Nombre;
+            updCliente.Apellido = cliente.Apellido.Equals(null) ? updCliente.Apellido : cliente.Apellido;
+            updCliente.Direccion = cliente.Direccion.Equals(null) ? updCliente.Direccion: cliente.Direccion;
             updCliente.Telefono = cliente.Telefono.Equals(null) ? updCliente.Telefono : cliente.Telefono;
+
+            await _context.SaveChangesAsync();
         }
     }
 }
