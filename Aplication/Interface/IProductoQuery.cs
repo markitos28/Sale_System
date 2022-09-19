@@ -10,6 +10,7 @@ namespace Aplication.Interface
     public interface IProductoQuery
     {
         Producto GetProducto(int productoId);
+        Producto GetProducto(string codigo);
         IList<Producto> GetProductoAll();
     }
 }

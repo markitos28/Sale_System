@@ -9,7 +9,8 @@ namespace Aplication.Interface
 {
     public interface ICarritoQuery
     {
-        Carrito GetCarrito(int carritoId);
+        Carrito GetCarrito(Guid carritoId);
+        Carrito GetCarrito(int clienteId, bool estado);
         IList<Carrito> GetCarritoAll();
     }
 }

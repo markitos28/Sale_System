@@ -11,6 +11,6 @@ namespace Aplication.Interface
     {
         Task InsertCarrito(Carrito carrito);
         Task DeleteCarrito(int carritoId);
-        Task UpdateCarrito(Carrito carrito);
+        Task UpdateCarrito(Guid carritoId, bool estado);
     }
 }
